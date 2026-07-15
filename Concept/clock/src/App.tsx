@@ -6,7 +6,7 @@ export function Clock() {
 
   useEffect(() => {
     if (!showTime) {
-      return;
+      return;  // Don't run interval if hidden
     }
     const intervalId = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
