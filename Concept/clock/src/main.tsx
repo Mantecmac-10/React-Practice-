@@ -1,0 +1,4 @@
+import { createRoot } from "react-dom/client";
+import { Clock } from "./App.tsx";
+
+createRoot(document.getElementById("root")!).render(<Clock />);
